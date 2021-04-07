@@ -1,0 +1,350 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+
+*
+{
+    margin: 0%;
+}
+
+body
+{
+    background-image: url("e.jpg");
+    background-size:cover;
+}
+
+nav
+{
+    height: 5vw;
+    background-color: black;
+    opacity: 50%;
+    font-size: 3vw;
+    color:whitesmoke;
+    font-family: 'Teko', sans-serif;
+    padding-left: 50px;
+    padding-top: 15px;
+}
+.admin
+{
+    position: absolute;
+    font-size: 1.2vw;
+    margin-left: 78%;
+    margin-top: -10px;
+}
+.admin a
+{
+    color: whitesmoke;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-family: 'Gruppo', cursive;
+    letter-spacing: 2px;
+}
+.admin a:hover
+{
+    background-color: whitesmoke;
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.abus
+{
+    position: absolute;
+    font-size: 1.2vw;
+    margin-left: 85%;
+    margin-top: -10px;
+}
+.abus a
+{
+    color: whitesmoke;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-family: 'Gruppo', cursive;
+    letter-spacing: 2px;
+}
+.abus a:hover
+{
+    background-color: whitesmoke;
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+h1
+{
+    color: rgba(250, 250, 250, 0.768);
+    font-size: 80px;
+}
+h1:hover
+{
+    color: whitesmoke;
+}
+#main
+{
+     
+    text-align:center;
+    margin-top: 100px;
+    position: relative;
+    
+}
+
+.inputvalue
+{
+    font-size: 18px;
+    height: 45px;
+    width: 300px;
+    border-radius: 50px;
+    outline: none;
+    color: white;
+    border: none;
+    background: rgba(0, 0, 0, 0.6);
+    padding-left: 50px;
+    font-family: 'Gruppo', cursive;
+    font-weight: bold;
+    letter-spacing: 2px;
+    
+}
+
+#main .inputval i
+{
+    color:white;
+    position: absolute;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+
+.loginval
+{
+    text-align: center;
+    height: 45px;
+    width: 350px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background:rgba(226, 45, 45, 0.932);
+    font-family: 'Aldrich', sans-serif;
+    color: white;
+    letter-spacing: 5px;
+    margin-top: 20px;
+}
+.loginval:hover
+{
+    background-color: 	#980000 ;
+}
+.loginval:focus
+{
+    transform: translateY(1px);
+}
+/* password visibility */
+#main .inputval #togglePassword
+{
+    margin-left: 300px;
+    color: rgb(202, 202, 202);
+    cursor: pointer;
+}
+#main .inputval #togglePassword:hover
+{
+    color: rgb(255, 255, 255, 0.9);
+}
+.registerval
+{
+    background: none;
+}
+
+.signup p
+{
+    color: rgb(253, 253, 253);
+    font-family: 'Gruppo', cursive;
+    font-size: 1.2vw;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.signup
+{
+    position: absolute;
+    padding-top: 50px;
+    margin-left: 35%;
+}
+.signup .signupBtn
+{
+    color: whitesmoke;
+    background: none;
+    border: none;
+    font-size: 1.2vw;
+    text-decoration: underline;
+    font-family: 'Aldrich', sans-serif;
+    cursor: pointer;
+    position: absolute;
+    margin-top: -23px;
+    margin-left: 200px;
+    border-radius: 30px;
+    padding: 2px 10px;
+    outline: none;
+}
+.signup .signupBtn:hover
+{
+    color:rgb(182, 180, 180);
+    text-decoration: underline;
+    background-color: rgba(226, 222, 222, 0.37);
+    color: whitesmoke;
+}
+.signup .radio
+{
+    color: whitesmoke;
+    font-size: 1.3vw;
+    padding-left: 70px;
+    padding-top: 12px;
+    font-family: 'Gruppo', cursive;
+    letter-spacing: 2px;
+}
+.signup .radio input[type="radio"]
+{
+    height: 20px;
+    width: 20px;
+}
+
+.resetpas
+{
+    margin-top: 20px;
+    margin-left: 13%;
+}
+.resetpas a
+{
+    color: whitesmoke;
+    font-size: 1vw;
+    text-decoration: none;
+    font-family: 'Saira Extra Condensed', sans-serif;
+}
+.resetpas a:hover
+{
+    color:rgb(182, 180, 180);
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* reset password modal */
+.mymodal
+{
+    display: none;    
+    padding-top: 100px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    backdrop-filter: blur(6px);
+    position: fixed;
+}
+.modalcontent
+{
+    background-color: rgb(230, 230, 230);
+    margin-top:4%;
+    margin-left: 35%;
+    width: 25vw;
+    border-radius: 20px;
+    padding:30px;
+    font-size: 2vw;
+    text-align: center;
+}
+.modalcontent .close
+{
+    color: rgb(34, 33, 33);
+    font-size: 1.5vw;
+    position: absolute;
+    margin-left: 12%;
+    margin-top: -15px;
+}
+/* reset password form */
+.modalcontent h1
+{
+    padding-top: 30px;
+    font-size: 2vw;
+    color: cornflowerblue;
+    font-family: 'Aldrich', sans-serif;
+   
+}
+.inputvall
+{
+    padding-top: 30px;
+}
+.inputvall .input
+{
+    width: 20vw;
+    height: 3vw;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    border-bottom: 2px solid black;
+    font-size: 1.2vw;
+    letter-spacing: 2px;
+    font-family: 'Gruppo', cursive;
+    font-weight: bold;
+    background: none;
+}
+
+.update
+{
+    padding-top: 35px;
+    padding-bottom: 30px;
+}
+.updateBtn
+{
+    width: 15vw;
+    height: 2.5vw;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color:black;
+    font-family: 'Aldrich', sans-serif;
+    letter-spacing: 3px;
+    font-weight: bold;
+    background-color: rgb(163, 163, 172);
+    box-shadow: 1px 5px 10px black;
+}
+.updateBtn:focus
+{
+    transform: translateY(2px);
+}
+
+/* password visibility in modal */
+.mymodal .modalcontent .inputvall #rtogglePassword
+{
+    color: rgb(10, 10, 10, 0.9);
+    font-size: 1.3vw;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 19%;
+    margin-top: 1%;
+}
+.mymodal .modalcontent .inputvall #rtogglePassword:hover
+{
+    color: black;
+}
+.mymodal .modalcontent .inputvall #ctogglePassword
+{
+    color: rgb(10, 10, 10,0.9);
+    font-size: 1.3vw;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 19%;
+    margin-top: 1%;
+}
+.mymodal .modalcontent .inputvall #ctogglePassword:hover
+{
+    color: black;
+}
+
+/* radio button */
+
+.checkstatus
+{
+    color: aliceblue;
+    margin-top: 70px;   
+}
+.checkstatus p
+{
+    font-size: 1.5vw;
+    font-family: 'Saira Extra Condensed', sans-serif;
+}
