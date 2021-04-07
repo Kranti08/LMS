@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Admin homepage</title>
+
+        <link href="CSS/admin_homepage.css" type="text/css" rel="stylesheet">
+    </head>
+<body>
+<br>
+<div class="main">
+    <form name="myform" action="showlist.php"  method="POST">
+    <div class="student">
+        <input type="submit" name="student" value="Show Students">
+        <input type="submit" name="teacher" value="Show Teachers">
+        <input type="submit" name="books" value="Show books">
+        <br>
+
+        <select name="year" class="sort">
+            <option disabled selected value="">Sort by year</option>
+            <option class="b" value="FY">FY</option>
+            <option class="b" value="SY">SY</option>
+            <option class="b" value="TY">TY</option>
+        </select>
+
+        <select name="department" class="dept">
+            <option disabled selected value="">Department</option>
+            <option class="b" value="Computer Science">Computer Science</option>
+            <option class="b" value="Microbiology">Microbiology</option>
+            <option class="b" value="Animation">Animation</option>
+            <option class="b" value="Psychology">Psychology</option>
+            <option class="b" value="Mathematics">Mathematics</option>
+        </select>
+    </div>
+    </form>
+</div>
+<br><hr><br>
+
+<!-- Add book to database -->
+<a href="addbook.php"> Add Book</a>
+<br><br>
+<a href="removebook.php"> Remove Book </a>
+
+</body>
+</html>
